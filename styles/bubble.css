@@ -1,0 +1,31 @@
+.bubble-container {
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+
+.bubble {
+  padding: 10px 20px;
+  white-space: nowrap;
+  display: flex;
+  border-radius: 10px;
+  border: 3px solid black;
+  background: white;
+  position: relative;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+.bubble::after {
+  content: '';
+  width: 10px;
+  height: 8px;
+  position: absolute;
+  bottom: -14px;
+  left: 10px;
+  border-bottom-right-radius: 10px;
+
+  background: white;
+  border: 3px solid black;
+  border-top: 3px solid white;
+}

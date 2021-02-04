@@ -1,0 +1,68 @@
+@import 'owl.css';
+@import 'todo.css';
+@import 'bubble.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+* {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url('https://preview.redd.it/1w656zayl7641.png?auto=webp&s=140acd251373a9e41622ad243431a2733123644c');
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: #ecf0f1;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid black;
+}
+
+.container {
+  width: 1080px;
+  margin: 0 auto;
+  padding-top: 60px;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}

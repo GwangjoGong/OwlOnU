@@ -1,0 +1,62 @@
+.todo {
+  width: 540px;
+  height: 60vh;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  margin-top: -15px;
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-input {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+
+.todo ul {
+  padding: 0;
+  flex: 1;
+  overflow: auto;
+}
+
+.todo li {
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #bdc3c7;
+}
+
+.todo li::marker {
+  display: none;
+}
+
+.todo span {
+  flex: 1;
+}
+
+.todo button {
+  margin: 0 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.done {
+  opacity: 0.3;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+.done button {
+  color: black !important;
+}
